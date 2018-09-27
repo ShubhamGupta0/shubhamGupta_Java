@@ -58,9 +58,8 @@ public class CurrentPositionService implements ICurrentPositionService {
                 newPositionFileModelList.add(eSpecificPositionRecord);
                 newPositionFileModelList.add(ISpecificPositionRecord);
             }
-            newPositionFileModelList = newPositionFileModelList;
-
-            return null;
+           
+            return newPositionFileModelList;
         } catch (IOException e) {
             e.printStackTrace();
         }
