@@ -2,41 +2,38 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import org.codehaus.jackson.annotate.JsonProperty;
 
-public class TransactionModel {
+public class PositionFileModel {
    
 
+private String instrument;
+private int account;
+private String accountType;
+private int quantity;
 
-    public int getTransactionId() {
-        return transactionId;
-    }
+public void setInstrument(String instrument){
+	this.instrument=instrument;
+}
+public void setAccount(int account){
+	this.account=account;
+}
+public void setAccountType(String accountType){
+	this.accountType=accountType;
+}
+public void setQuantity(int quantity){
+	this.quantity=quantity;
+}
 
-    public void setTransactionId(int transactionId) {
-        this.transactionId = transactionId;
-    }
-
-    public String getInstrument() {
-        return instrument;
-    }
-
-    public void setInstrument(String instrument) {
-        this.instrument = instrument;
-    }
-
-    public String getTransactionType() {
-        return transactionType;
-    }
-
-    public void setTransactionType(String transactionType) {
-        this.transactionType = transactionType;
-    }
-
-    public int getTransactionQuantity() {
-        return transactionQuantity;
-    }
-
-    public void setTransactionQuantity(int transactionQuantity) {
-        this.transactionQuantity = transactionQuantity;
-    }
+public String getInstrument(){
+	return this.instrument;
+}
+public int getAccount(){
+	return this.account;
+}
+public String getAccountType(){
+	return this.accountType;
+}
+public int getQuantity(){
+	return this.quantity;
+}
 }
